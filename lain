@@ -1,0 +1,13 @@
+#!/bin/bash
+
+file=$1
+
+directory="$HOME/lain/$file"
+
+if [ ! -d "$directory" ]; then
+        echo "no such task exists / task is not named correctly"
+        exit 1
+fi
+
+cp $1 "$directory"
+sh "$directory/runner.sh"
