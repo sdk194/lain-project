@@ -1,8 +1,12 @@
 #!/bin/bash
 
+#Configure the directory to match where the directory filled with tasks are
+#Of course, this shellscript will change in the future so that it connects to the server you configure it to
+
+
 file=$1
 
-directory="$HOME/lain/$file"
+directory="INSERT DIRECTORY THAT HAS THE DIRECTORY OF TASKS HERE"
 
 if [ ! -d "$directory" ]; then
         echo "no such task exists / task is not named correctly"

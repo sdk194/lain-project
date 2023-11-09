@@ -1,5 +1,8 @@
 #!/bin/bash
 
+#This is an example of a runner. The fizzbuzz file asks for input and so the testcases have an input.txt file that feeds it input.
+#It then creates an actual.txt which is the submitted file's output. Which then gets compared with the output.txt file which is the expected output.
+
 directory="$HOME/lain/fizzbuzz.cpp"
 
 g++ -o "$directory/fizzbuzz" "$directory/fizzbuzz.cpp"
